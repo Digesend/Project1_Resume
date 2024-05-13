@@ -101,3 +101,8 @@ meter {
     width:200px;
     margin-right:10px;    
 }
+
+#date{
+    color:gray;
+    size : 2px;
+}

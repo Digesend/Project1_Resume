@@ -5,7 +5,7 @@
 	<title>온라인 프로필</title>
 	<meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javsscript/prefixfree.min.js"></script>
+    <script src="javascript/prefixfree.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
@@ -74,14 +74,14 @@
             <!-- 자기 소개 -->
             <section>
                 <h2 class="subtitle">Who am I?</h2>
-                <p><mark>프론트엔드 웹 기술(Front-end Web Tech.)</mark>에 관심이 많아<br>전직한 92년생(만%d생) 할머니 개발자입니다. <br>나이가 먹어서 몸 여기저기가 쑤십니다.</p>
+                <p><mark>프론트엔드 웹 기술(Front-end Web Tech.)</mark>에 관심이 많아<br>전직한 92년생<span id="result"></span> 할머니 개발자입니다. <br>나이가 먹어서 몸 여기저기가 쑤십니다.</p>
             </section>
 
             <!-- 경력 -->
             <section>
                 <h2 class="subtitle">Experience</h2>
                 <ul>
-                    <li>리메드
+                    <li>리메드  <span id="date1">2017.02 ~ 2020.04</span>    
                         <ol>
                             <li>
                                 <p>펌웨어 개발<br>: 회사내 의료기기의 펌웨어 개발(3년간 회사내 펌웨어 담당 수행)</p>
@@ -104,7 +104,7 @@
                             </li>
                         </ol>
                     </li>
-                    <li>오티스엘리베이터
+                    <li>오티스엘리베이터    <span id="date2">2021.02 ~ 2023.04</span>
                         <ol>
                             <li>
                                 <p>Global OS<br>: 오티스 엘레베이터 제품 내에 들어갈 SW를 수정 및 유지보수하는 업무, 한달에 한번 팀 회의에 참석하여 Global 미팅 진행.</p>
@@ -125,8 +125,8 @@
                             </li>
                         </ol>
                     </li>
-                    <li>백년소프트 
-                        <ol>
+                    <li>백년소프트  <span id="date3">2023.05 ~ 재직중</span>
+                           <ol>
                             <li>
                                 <p>MFC를 이용한 SKB 사내 직원용 프로그램 GUI 개발<br>: MFC를 이용하여 SK Broadband 직원들이 사용하게 될 프로그램의 GUI를 개발합니다.</p>
                             </li>
@@ -184,5 +184,6 @@
             </section>
         </div>        
     </div>
+    <script src="javascript/style.js"></script>
 </body>
 </html>
