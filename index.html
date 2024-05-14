@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
         table {
-        width:90%;  /* 표의 너비 */
+        width:100%;  /* 표의 너비 */
         border:1px solid #222; /* 1픽셀짜리 표 테두리 */
         border-collapse: collapse; /* 중복되는 표와 셀의 테두리를 한 줄로 표시 */
         }
@@ -80,8 +80,9 @@
             <!-- 경력 -->
             <section>
                 <h2 class="subtitle">Experience</h2>
+                <span id="total_experience"></span>
                 <ul>
-                    <li>리메드  <span id="date1">2017.02 ~ 2020.04</span>    
+                    <li>리메드  <span id="date1">2017.02 ~ 2020.04</span>   <span id="experience1"></span>    
                         <ol>
                             <li>
                                 <p>펌웨어 개발<br>: 회사내 의료기기의 펌웨어 개발(3년간 회사내 펌웨어 담당 수행)</p>
@@ -104,7 +105,7 @@
                             </li>
                         </ol>
                     </li>
-                    <li>오티스엘리베이터    <span id="date2">2021.02 ~ 2023.04</span>
+                    <li>오티스엘리베이터    <span id="date2">2021.02 ~ 2023.04</span>   <span id="experience2"></span>
                         <ol>
                             <li>
                                 <p>Global OS<br>: 오티스 엘레베이터 제품 내에 들어갈 SW를 수정 및 유지보수하는 업무, 한달에 한번 팀 회의에 참석하여 Global 미팅 진행.</p>
@@ -125,7 +126,7 @@
                             </li>
                         </ol>
                     </li>
-                    <li>백년소프트  <span id="date3">2023.05 ~ 재직중</span>
+                    <li>백년소프트  <span id="date3">2023.05 ~ 재직중</span>    <span id="experience3"></span>
                            <ol>
                             <li>
                                 <p>MFC를 이용한 SKB 사내 직원용 프로그램 GUI 개발<br>: MFC를 이용하여 SK Broadband 직원들이 사용하게 될 프로그램의 GUI를 개발합니다.</p>
@@ -144,7 +145,67 @@
             <!-- 숙련도 -->
             <section>
                 <h2 class="subtitle">Certification</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>자격증 종류</th>
+                            <th>취득일</th>
+                            <th>발행처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>워드프로세서 1급</td>
+                            <td>2012.08</td>
+                            <td>대한상공회의소</td>
+                        </tr>
+                        <tr>
+                            <td>컴퓨터 활용능력 2급</td>
+                            <td>2012.11</td>
+                            <td>대한상공회의소</td>
+                        </tr>
+                        <tr>
+                            <td>모스마스터</td>
+                            <td>2013.01</td>
+                            <td>Microsoft</td>
+                        </tr>
+                        <tr>
+                            <td>정보처리기사</td>
+                            <td>2016.07</td>
+                            <td>한국산업인력공단</td>
+                        </tr>
+                        <tr>
+                            <td>무선설비기사</td>
+                            <td>2019.09</td>
+                            <td>한국방송통신전파진흥원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
+            <!-- 언어 -->
+            <section>
+                <h2 class="subtitle">Language</h2>
+                <ul>
+                    <li>[영어] 일상회화 가능(하)</li>
+                    <ul>
+                        <li>TOEIC 720점<br>2020.06 취득</li>
+                        <li>OPIc IM2<br>2022.08 취득</li>
+                    </ul>
+                    <li>[일본어] 일상회화 가능(하)</li>
+                    <ul>
+                        <li>JLPT N2<br>2017.08 취득</li>
+                    </ul>
+                </ul>
+            </section>
+
+             <!-- 교육 -->
+             <section>
+                <h2 class="subtitle">Education</h2>
+                <ul>
+                    <li><span id="bold">U-Service(임베디드) 전문 개발자 과정(10기)</span><br>2016.03~2016.08 / Kitri<br>Linux와 C/C++을 통한 각종 기계장치 제어 및 활용</li>
+                    <li><span id="bold">미국 애틀란타 어학연수</span><br>2012.01~2012.02 / 인하공업전문대학&조지아공과대학<br>어학연수 및 문화체험</li>
+                </ul>
             </section>
 
             <!-- 학력 -->
@@ -184,6 +245,7 @@
             </section>
         </div>        
     </div>
+    <!--사용되는 js파일은 body태그 하단에 위치해야 정상 동작한다.-->
     <script src="javascript/style.js"></script>
 </body>
 </html>

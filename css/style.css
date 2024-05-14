@@ -8,7 +8,7 @@ body {
 }
 li,p {
     line-height: 2.0;
-    font-size:0.9em;
+    font-size:0.95em;
 }
 #container {
     position:absolute;
@@ -54,8 +54,12 @@ aside {
     border-bottom:1px dotted #222;
 }
 
-section > p, section>table {
+section > p {
     margin-left:50px;
+}
+
+section>table {
+    margin-left:10px;
 }
 
 /* 글자스타일 */
@@ -102,7 +106,14 @@ meter {
     margin-right:10px;    
 }
 
-#date{
-    color:gray;
-    size : 2px;
+#total_experience{
+    color:red;
+    padding-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#bold{
+    font-size: large;
+    font-weight: bold;
 }
